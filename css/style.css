@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('reset-popup.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 584px;
+    height: 557px;
+    border: 1px solid #132B50;
+    border-radius: 16px;
+    padding: 85px 0px 85px 85px;
+    margin-top: 80px;
+    position: relative;
+}
+h1{
+    color: #132B50;
+}
+
+/*! USER */
+.user{
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    color: #132B50;
+}
+.avatar{
+    width: 78px;
+    height: 78px;
+    background-color: #fff;
+    border:1px solid #132B50;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.user-text div:first-child{
+    font-weight: 500;
+}
+
+/*! PASSWORD CONTAİNER */
+
+.password-container{
+
+}
+
+.password-container div:first-child{
+    font-weight: 500;
+    color: #132B50;
+    margin-bottom: 8px;
+}
+
+.password{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.password label{
+    position: absolute;
+    font-size: 1.4em;
+    left: 16px;
+    top: 16px;
+}
+.password label #locked,
+.password label #open{
+    position: absolute;
+
+}
+.password label #open{
+    display: none;
+}
+
+
+.password input{
+    padding: 16px 16px 16px 45px;
+
+    width: 371px;
+    height: 59px;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.password button{
+    font-size: 1.6em;
+    margin-left: 16px;
+    color: #132B50;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.password button #hide,
+.password button #show{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 15px;
+    font-size: 1.1em;
+}
+
+/*!  CONTİNUE */
+
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+
+
+}
+.stay{
+    display: flex;
+    align-items: center;
+
+}
+.stay input{
+    display: none;
+}
+.stay label {
+    width: 60px;
+    height: 36px;
+    border: #132B50 1px solid;
+    position: relative;
+    border-radius: 30px;
+    display: inline-block;
+    transition: 0.5 background-color, 0.5s border;
+    cursor: pointer;
+}
+.stay label  label{
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: #132B50 1px solid;
+    top: calc(50% - 11px);
+    left: 6px;
+    background-color: #132B50;
+    transition: 0.5s all;
+}
+
+#check:checked + label{
+    background-color: #132B50;
+    border: transparent 1px solid;
+}
+#check:checked + label .circle{
+    transform: translateX(25px);
+    background-color: #fff;
+}
+.stay span {
+    margin-left: 8px;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+}
+.continue button{
+    margin-right: 125px;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    background-color: #132B50;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/*! RESET PASSWORD */
+
+.forget{
+    background: white;
+    border: none;
+    margin-top: 40px;
+    border-bottom: 1px solid #132B50;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+.active{
+    display: block;
+}
+.remove{
+    display: none;
+}

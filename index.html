@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deneme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="container">
+        <h1>Enter your password</h1>
+    
+        <div class="user">
+            <div class="avatar"></div>
+            <div class="user-text">
+                <div>Business Account</div>
+                <h3>Ali Güvenç</h3>
+            </div>
+        </div>
+    
+        <div class="password-container">
+            <div>Password</div>
+            <div class="password">
+                <label for="lock">
+                    <i id="locked" class="fa-solid fa-lock"></i>
+                    <i id="open" class="fa-solid fa-lock-open"></i>
+                </label>
+                <input autofocus placeholder="Enter password" type="password" id="lock">
+                <button >
+                    <i class="fa-regular fa-eye-slash" id="hide"></i>
+                    <i class="fa-regular fa-eye" id="show"></i>
+                </button>
+            </div>
+        </div>
+    
+        <div class="continue">
+            <div class="stay">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <label for="check" class="circle"></label>
+                </label>
+                <span>Stay signed in</span>
+            </div>
+            <button>Continue</button>
+        </div>
+    
+        <button class="forget">Reset password</button>
+
+        <div class="reset-popup">
+
+            <div class="popup">
+                <header>
+                    <h2>Forgot Password</h2>
+                    <i class="fa-solid fa-xmark"></i>
+                </header>
+                <div class="content">
+                    <h4>
+                        No worries! Just enter your email and we'll send you a reset password link.
+                    </h4>
+    
+                    <label for="email">
+                        <div>Email</div>
+                        <input type="email" placeholder="Enter Email..." id="email">
+                    </label>
+    
+                    <button>Send Recovery Email</button>
+    
+                    <div class="log-in">
+                        <div>Just Remembered?</div>
+                        <button>Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

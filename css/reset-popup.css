@@ -1,0 +1,94 @@
+.reset-popup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    display: none;
+}
+.active{
+    display: block;
+}
+.reset-popup .popup{
+    width: 584px;
+    height: 557px;
+    border: 1px solid #132B50;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 50px;
+    color: #132B50;
+}
+
+.reset-popup .popup header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 6px;
+}
+.reset-popup .popup header i{
+    font-size: 24px;
+    cursor: pointer;
+}
+.reset-popup .popup header h2{
+    
+}
+.reset-popup .popup .content{
+    margin-top: 30px;
+}
+.reset-popup .popup .content h4{
+    font-size: 16px;
+    margin-bottom: 50px ;
+    letter-spacing: .5px;
+
+}
+.reset-popup .popup .content label{
+
+}
+.reset-popup .popup .content div{
+    color: #132B50;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.reset-popup .popup .content input:placeholder{
+    color: #132B50;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+.reset-popup .popup .content input{
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: 2px solid #132B50;
+    border: none;
+}
+
+.reset-popup .popup .content button{
+    width: 100%;
+    height: 45px;
+    background-color: #132B50;
+    color: white;
+    font-weight: 500;
+    margin-top: 40px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.reset-popup .popup .content .log-in{
+    text-align: center;
+    margin-top: 60px;
+}
+.reset-popup .popup .content .log-in button{
+    background-color: transparent;
+    border: none;
+    color: #132B50;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+}
